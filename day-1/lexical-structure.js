@@ -43,13 +43,3 @@ a = 33333;
 // Immutable -> Değiştirilemez
 
 const b = "Kodluyoruz";
-
-// ------------
-
-var a1 = 123;
-a1 = 12345455;
-a1 = "Enes";
-
-var a2 = 123;
-
-console.log(a2);
