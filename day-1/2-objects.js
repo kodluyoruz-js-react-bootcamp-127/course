@@ -1,6 +1,3 @@
-// String
-const name = "1";
-
 // Object Literal
 // Not an immutable
 const araba = {
@@ -11,6 +8,7 @@ const araba = {
   isDriving: false,
   wheelCount: 4,
   drive: function () {
+    // This
     this.isDriving = true;
     console.log("I drive!", this.isDriving);
   },
@@ -24,8 +22,6 @@ const araba = {
 araba.drive(araba);
 
 araba.brand = "Mercedes";
-
-// Scope - This
 
 // Property Access
 console.log(araba.brand);
@@ -60,7 +56,6 @@ console.log(
 // -1
 
 // Deleting Properties
-
 delete araba.color;
 
 console.log(araba.color);

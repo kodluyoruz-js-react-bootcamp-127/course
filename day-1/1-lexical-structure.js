@@ -30,8 +30,6 @@ comment line
 // var d = null;
 // var e = undefined;
 
-// Type safe
-
 // = operator
 let a = 123;
 a = "Kodluyoruz";
