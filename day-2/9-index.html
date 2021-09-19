@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="baslik">Users</h1>
+    <ul id="user-list">
+
+    </ul>
+</body>
+<script>
+    fetch('https://jsonplaceholder.typicode.com/users', {
+        method: 'GET',
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+        .then((response) => response.json())
+        .then((json) => {
+            const userArray = json;
+            const userList = document.getElementById('user-list')
+
+            userArray.forEach((user, index) => {
+                const li = document.createElement('li')
+                li.innerText = `${user.username} - ${user.website}`
+                userList.appendChild(li)
+            })
+
+            const userNameList = userArray.map((user)=>{
+                return user.username
+            })
+            console.log(userNameList)
+        });
+</script>
+
+</html>

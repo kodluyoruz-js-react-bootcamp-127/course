@@ -1,3 +1,9 @@
+// Object Class
+const person = Object.create({
+  firstName: "Haci",
+  lastName: "Simsek",
+});
+
 // Object Literal
 // Not an immutable
 const araba = {
@@ -7,6 +13,7 @@ const araba = {
   length: 5.3,
   isDriving: false,
   wheelCount: 4,
+  // Method
   drive: function () {
     // This
     this.isDriving = true;
