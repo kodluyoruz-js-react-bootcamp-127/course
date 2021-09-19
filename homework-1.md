@@ -25,5 +25,13 @@ You can find the example design here: https://www.figma.com/file/4rz2uuU1kU1moo7
     - After that, you can use the following endpoint to get list of movies;
     - `https://api.themoviedb.org/3/discover/movie?api_key=[YOUR_API_KEY]&sort_by=popularity.desc`
     - Here, you should use own key.
+    - You can see what this endpoint return as a result [here](https://developers.themoviedb.org/3/discover/movie-discover).
 - You should use [flex](https://www.w3schools.com/css/css3_flexbox.asp) or [grid](https://www.w3schools.com/css/css_grid.asp) for layout styling in CSS
 - You should use [media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) for responsiveness.
+
+## Plus
+
+It would be great to see these features in your example but you don't have to.
+
+- The endpoint returns `page:1` and `total_pages`. You can implement pagination with these details. In every page, you can send `page=[PAGE_NUMBER]` as a query parameter to fetch new list.
+- You can provide sorting [options](https://www.w3schools.com/tags/tag_option.asp) to end user. So they can sort the movies with `sort_by` query params. You can find the details [here](https://developers.themoviedb.org/3/discover/movie-discover) (Click **Try it Out** butotn).
