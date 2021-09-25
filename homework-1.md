@@ -29,6 +29,15 @@ You can find the example design here: https://www.figma.com/file/4rz2uuU1kU1moo7
 - You should use [flex](https://www.w3schools.com/css/css3_flexbox.asp) or [grid](https://www.w3schools.com/css/css_grid.asp) for layout styling in CSS
 - You should use [media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) for responsiveness.
 
+### Publish
+
+To publish your app, you can use [Netlify](https://www.netlify.com/).
+- After sign in to Netlify, go to [Drop](https://app.netlify.com/drop) page.
+- Here you should put your `index.html` to a folder. (movie-app/index.html)
+- And drag & drop your folder to here. 
+- It will generate a website for you. 
+- Share this link in your README.md of your repo.
+
 ## Plus
 
 It would be great to see these features in your example but you don't have to.
