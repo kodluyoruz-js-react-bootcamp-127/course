@@ -4,6 +4,8 @@ import "./App.css";
 import TableHead from "./components/TableHead";
 import TableBody from "./components/TableBody";
 import TableForm from "./components/TableForm";
+import { ThemeContext } from "./context/theme";
+import { UserContext } from "./context/user";
 
 // hard coded data
 const columns = ["Name", "Age", "City", "School", "Language"];
@@ -26,10 +28,50 @@ const data = [
   },
 ];
 
+// State Managent
+// Context
+
+const Settings = () => {
+  return (
+    <ThemeContext.Consumer>
+      {({ theme, changeTheme }) => (
+        <div
+          style={{
+            background: theme === "light" ? "white" : "black",
+            color: theme === "light" ? "black" : "white",
+          }}
+        >
+          <span>Theme: {theme}</span>
+          <button onClick={changeTheme}>Change Theme</button>
+        </div>
+      )}
+    </ThemeContext.Consumer>
+  );
+};
+
+// Stateless Components - PascalCase
+const Header = ({ name }) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        justifyContent: "space-between",
+      }}
+    >
+      <h1>{name}</h1>
+      <Settings />
+    </div>
+  );
+};
+
+// Statefull Components
 // PascalCase
 class PersonTable extends React.Component {
   state = {
     data: [],
+    organizationName: "Kodluyoruz",
+    theme: "light",
   };
 
   // Life Cycle Methods
@@ -69,18 +111,45 @@ class PersonTable extends React.Component {
     });
   };
 
+  handleChangeName = () => {};
+
   render() {
-    console.log("Table Render Oldu");
-    const { data } = this.state;
+    const { data, organizationName } = this.state;
 
     return (
-      <div className="App">
-        <table>
-          <TableHead columns={columns} />
-          <TableBody rows={data} />
-        </table>
-        <TableForm handleAddNewPerson={this.handleAddNewPerson} />
-      </div>
+      <UserContext.Provider
+        value={{
+          user: null,
+        }}
+      >
+        <ThemeContext.Provider
+          value={{
+            theme: this.state.theme,
+            changeTheme: () => {
+              this.setState({
+                theme: this.state.theme == "light" ? "dark" : "light",
+              });
+            },
+          }}
+        >
+          <div className="App">
+            {/* <Header /> */}
+            <Header name={organizationName} theme={this.state.theme} />
+            <button
+              onClick={() => {
+                this.setState({ organizationName: "Kodluyoruz" });
+              }}
+            >
+              Change Text
+            </button>
+            <table>
+              <TableHead columns={columns} />
+              <TableBody rows={data} />
+            </table>
+            <TableForm handleAddNewPerson={this.handleAddNewPerson} />
+          </div>
+        </ThemeContext.Provider>
+      </UserContext.Provider>
     );
   }
 }
