@@ -1,9 +1,9 @@
-## Messaging App
+# Messaging App
 
 You are expected to example messaging app that lists movies.
 You can find the design here: https://www.figma.com/file/4rz2uuU1kU1moo7A8vtpLc/?node-id=602%3A177
 
-### As a end user;
+## As a end user;
 
 - Firstly, I should see login page to start chatting with people on `/login` route.
 - User who has **not authorized** should not able to see messaging page. They should be redirected to login.
@@ -23,10 +23,11 @@ You can find the design here: https://www.figma.com/file/4rz2uuU1kU1moo7A8vtpLc/
 ## Additional Info
 
 - You will find mock data to use in your app in this repo called `messaging-mock-users.json`;
+
   - You will need to use these users to show. Each user has `messages` array and these messages have sender id.
   - If message sender is selected user, I should see his/her messages on the left, if it is my message, I should see them on right.
 
-### Requirements
+## Requirements
 
 - You need to develop your application by using only HTML, CSS, JavaScript and **React**.
 - You should not use any CSS library.
@@ -45,7 +46,7 @@ You can find the design here: https://www.figma.com/file/4rz2uuU1kU1moo7A8vtpLc/
 - In `ThemeContext`, we should have theme variable and every component should consume it. When I change the theme, my components should change as dark or light mode.
 - You should create routing structure with `react-router` package.
 
-### Publish
+## Publish
 
 To publish your app, you can use [Netlify](https://www.netlify.com/).
 
@@ -54,3 +55,13 @@ To publish your app, you can use [Netlify](https://www.netlify.com/).
 - Follow [these](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) steps.
 - It will generate a website for you.
 - Share this link in your README.md of your repo.
+
+## Plus
+
+### Git Usage (Plus)
+
+- I want you to use [Git-Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branch strategy in your project.
+- You should initialize a React application and push that to `main` branch.
+- After that, you should work on `develop` branch.
+- You should commit your changes to develop. When you finish any part of your application (ie, login page, users list, messaging), you should merge changes to `/main`.
+  - Netlify should listen your `main` branch and after every merge, it will create a new deploy automaticly.
