@@ -41,16 +41,17 @@ function Routes() {
       </ul>
 
       <Switch>
-        <Route path="/todo">
-          <Todo />
+        <Route path="/">
+          {/* {check user} */}
+          {/* if user <Redirect to="/chat" /> */}
+          {/* else <Redirect to="/login" /> */}
         </Route>
 
         <Route path="/login">
           <Login />
         </Route>
-        <Route path="/signup">
-          <h1>Sign Up</h1>
-        </Route>
+        <Route path="/chat">{/* <Chat /> */}</Route>
+        <Route path="/chat/:userid">{/* <UserDetails /> */}</Route>
       </Switch>
     </Router>
   );

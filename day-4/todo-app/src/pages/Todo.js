@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Redirect, useLocation } from "react-router-dom";
 
 import AddNewTodo from "../components/AddNewTodo";
@@ -7,6 +7,7 @@ import { TodoContext } from "../context/todo";
 
 import uuid from "uuid";
 import useLogin from "../hooks/useLogin";
+import { UserContext } from "../context/login";
 
 // Stateless
 // Hooks
