@@ -6,28 +6,42 @@ import useLogin from "../hooks/useLogin";
 export default function Login() {
   const { user, login } = useLogin();
   const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const { pathname } = useLocation();
 
-  if (user && pathname === "/login") return <Redirect to="/todo" />;
+  if (user && pathname === "/login") return <Redirect to="/chat" />;
 
   return (
     <div>
       <input
         type="text"
+        name="username"
         onChange={(e) => {
           setUsername(e.target.value);
         }}
       />
       <input
         type="password"
+        name="first_name"
         onChange={(e) => {
-          setPassword(e.target.value);
+          setFirstName(e.target.value);
+        }}
+      />
+      <input
+        type="password"
+        name="last_name"
+        onChange={(e) => {
+          setLastName(e.target.value);
         }}
       />
       <button
         onClick={() => {
-          login(username);
+          login({
+            username,
+            firstName,
+            lastName,
+          });
         }}
       >
         Login

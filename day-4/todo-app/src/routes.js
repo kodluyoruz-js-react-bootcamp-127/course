@@ -10,7 +10,7 @@ import {
 
 import useLogin from "./hooks/useLogin";
 import Login from "./pages/Login";
-import Todo from "./pages/Todo";
+import Chat from "./pages/Chat";
 
 function Routes() {
   // truthy ({}, [], 123, "lsdf") -falsy (null)
@@ -18,7 +18,7 @@ function Routes() {
 
   return (
     <Router>
-      <ul>
+      {/* <ul>
         {user ? (
           <>
             <li>
@@ -38,11 +38,11 @@ function Routes() {
             </li>
           </>
         )}
-      </ul>
+      </ul> */}
 
       <Switch>
-        <Route path="/todo">
-          <Todo />
+        <Route path="/chat">
+          <Chat />
         </Route>
 
         <Route path="/login">

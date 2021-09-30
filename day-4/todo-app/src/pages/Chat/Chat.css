@@ -1,0 +1,38 @@
+.chat-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side div,
+.right-side div {
+  border: 1px solid black;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 4;
+}
+
+.user-list,
+.messages {
+  flex: 1;
+}
+
+.user-list__user {
+  cursor: pointer;
+}
+
+.user-list__user:hover {
+  background-color: #e2e2e2;
+}
