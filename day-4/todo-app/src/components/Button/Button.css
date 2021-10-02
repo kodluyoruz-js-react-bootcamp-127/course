@@ -1,0 +1,11 @@
+.button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68b7ff;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  /* width: 250px; */
+}

@@ -1,0 +1,73 @@
+.chat {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.chat > div {
+  border: 1px solid black;
+}
+
+.chat > div > div {
+  border: 1px solid black;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side {
+  flex: 2;
+}
+
+.right-side {
+  flex: 8;
+}
+
+.user-list,
+.messages {
+  flex: 1;
+}
+
+.search-input-div {
+  padding: 16px;
+}
+
+.user-list .user {
+  padding: 16px;
+  background-color: white;
+  cursor: pointer;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.user-list .user:hover {
+  background-color: #e2e2e2;
+}
+
+.message-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-container.from-them {
+  justify-content: flex-start;
+}
+
+.message {
+  width: 60%;
+  border: 1px solid black;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.message-input-container {
+  display: flex;
+}
+
+.message-input-container input {
+  flex: 1;
+}

@@ -37,7 +37,7 @@ function Todo() {
     // dependency
   }, [todoState]);
 
-  const { user } = useLogin();
+  const { user, selectedUser } = useLogin();
   const { pathname } = useLocation();
 
   if (!user && pathname === "/todo") return <Redirect to="/login" />;
@@ -50,6 +50,7 @@ function Todo() {
         removeTodo,
       }}
     >
+      <h1>{selectedUser.firstName}</h1>
       <AddNewTodo />
       <TodoList />
     </TodoContext.Provider>

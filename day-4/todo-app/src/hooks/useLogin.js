@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../context/login";
 
 export default function useLogin() {
-  const { user, login, logout } = useContext(UserContext);
+  const { user, selectedUser, login, logout } = useContext(UserContext);
 
-  return { user, login, logout };
+  return { user, selectedUser, login, logout };
 }
