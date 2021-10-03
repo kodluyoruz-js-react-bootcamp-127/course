@@ -1,0 +1,47 @@
+.card-container {
+  background-color: lightslategray;
+  width: 400px;
+}
+
+.header,
+.content,
+.footer {
+  display: flex;
+  padding: 8px;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: gray;
+}
+
+.header div {
+  flex: 1;
+  margin: 0 16px;
+}
+
+button {
+  width: 64px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  background-color: #e2e2e2;
+}
