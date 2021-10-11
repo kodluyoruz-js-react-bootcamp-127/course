@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "email": "aysegul@gmail.com",
+      "password": "$2a$10$TncJ8znreL0c2dXNNT3gI.fKen4eut9MmXSc5/sbNrbOiWNFidqkO",
+      "id": 1
+    },
+    {
+      "email": "ays3334egul@gmail.com",
+      "password": "$2a$10$PnlfJHSytbiBTExULV2V0e.GkmVNiy25nx82ysqNlXGPEv6v8D4yG",
+      "id": 2
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$Ix8.ukDw.5WHPZ9Tmma6uO9jOeZf1Mz67g8zGEbwFlOd1wveohF4a",
+      "id": 3
+    },
+    {
+      "email": "hi@gmail.com",
+      "password": "$2a$10$PN1THZQ2wz.EtGeHVfwStORqqas0.dWl/PFN3G8.M3.OO1dy4Twai",
+      "id": 4
+    },
+    {
+      "email": "enes@kodluyoruz.com",
+      "password": "$2a$10$O3fiw.AMmYObdq5Cg2PaKuG/VIADCLL8Ywp/FMIFhzMOguCZQT/E.",
+      "id": 5
+    },
+    {
+      "email": "enes@kodluyoruz.org",
+      "password": "$2a$10$i/OoLReL3zqJki08o2GHBeOr.EjlW0rdC0qqHSiOih8ar35aAq2N6",
+      "id": 6
+    },
+    {
+      "email": "enes@kodluyoruz.io",
+      "password": "$2a$10$ohpGJDFx83zUWIYiYbflZeJspNo5RUPX7lFBsMwrlfHqlnjjeb5y2",
+      "id": 7
+    },
+    {
+      "email": "enes@kodluyoruz.ioee",
+      "password": "$2a$10$U/QeQvJKUtOqCp61.0iJGekYCvQnwbH7C/HRG9YlzbGvYbAinT3vy",
+      "id": 8
+    },
+    {
+      "email": "enes@xxxx.yy",
+      "password": "$2a$10$om80gX0S18BMFeRcWROyZuy1XCoExpLTFPRDKw2f5CqeVX6l4fkG.",
+      "id": 9
+    },
+    {
+      "email": "asfsadf@ggg.com",
+      "password": "$2a$10$E/alfEOtVJzDqi8q1YAlVO6rJFmJn6Uh.32fIQ0/.ZMgv/LUy.us.",
+      "id": 10
+    },
+    {
+      "email": "asdfasfd@gmail.com",
+      "password": "$2a$10$kK47EvFUq8WH7eI5jI6HB.ifwZ3drYxdJiS0Sp.VClxAG4qQqXP/O",
+      "id": 11
+    },
+    {
+      "email": "enes@gmailll.com",
+      "password": "$2a$10$XjWd61.abXNBIGAyxAfHV.gKRg5fqcs1ahcwisiu7Z3.1dw9kf0V2",
+      "id": 12
+    },
+    {
+      "email": "enes22@gmail.com",
+      "password": "$2a$10$JYuov/3yhnJODPNuZ.2db.IcsXs3UibKyj49o9n8bHo2TTIzLseGi",
+      "id": 13
+    }
+  ]
+}

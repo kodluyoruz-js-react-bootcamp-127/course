@@ -1,0 +1,24 @@
+.button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 300px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #5ba5eb;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: #68b7ff;
+}
+
+.button.secondary {
+  background-color: #e2e2e2;
+}

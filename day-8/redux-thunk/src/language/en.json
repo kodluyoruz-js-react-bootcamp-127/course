@@ -1,0 +1,12 @@
+{
+  "welcome": "Welcome {{username}}",
+  "input": {
+    "placeholders": {
+      "email": "Email...",
+      "password": "Password..."
+    }
+  },
+  "buttons": {
+    "signUp": "Sign Up"
+  }
+}
