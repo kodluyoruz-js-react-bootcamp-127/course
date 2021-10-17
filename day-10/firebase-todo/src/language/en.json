@@ -1,0 +1,24 @@
+{
+  "welcome": "Welcome {{username}}",
+  "input": {
+    "placeholders": {
+      "email": "Email...",
+      "password": "Password..."
+    }
+  },
+  "buttons": {
+    "signUp": "Sign Up"
+  },
+  "login": {
+    "errors": {
+      "wrong_password": "Wrong password!"
+    }
+  },
+  "signup": {
+    "errors": {
+      "invalid_mail": "Please select a valid email!",
+      "weak_password": "Plase select a strong password",
+      "email_already_in_use": "Email already in use."
+    }
+  }
+}

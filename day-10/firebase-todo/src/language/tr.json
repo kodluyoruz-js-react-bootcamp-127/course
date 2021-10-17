@@ -1,0 +1,24 @@
+{
+  "welcome": "Hoşgeldin {{username}}",
+  "input": {
+    "placeholders": {
+      "email": "Eposta...",
+      "password": "Şifre..."
+    }
+  },
+  "buttons": {
+    "signUp": "Kayıt Ol"
+  },
+  "login": {
+    "errors": {
+      "wrong_password": "Hatalı şifre!"
+    }
+  },
+  "signup": {
+    "errors": {
+      "invalid_mail": "Lütfen geçerli bir mail giriniz!",
+      "weak_password": "Lütfen güçlü bir şifre seçiniz!",
+      "email_already_in_use": "Email zaten kullanımda!"
+    }
+  }
+}

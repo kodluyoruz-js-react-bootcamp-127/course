@@ -1,0 +1,16 @@
+.todo-item {
+  padding: 16px;
+  margin-bottom: 8px;
+  background-color: #e2e2e2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+p:hover {
+  cursor: pointer;
+}
