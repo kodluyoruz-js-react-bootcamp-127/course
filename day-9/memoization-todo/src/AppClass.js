@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 
 import Button from "./components/Button";
 
-// PureComponent -> memoized
-class AppClass extends React.PureComponent {
+class AppClass extends React.Component {
   render() {
     return (
       <div className="app-container">

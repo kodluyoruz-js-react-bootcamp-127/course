@@ -1,0 +1,12 @@
+{
+  "welcome": "Hoşgeldin {{username}}",
+  "input": {
+    "placeholders": {
+      "email": "Eposta...",
+      "password": "Şifre..."
+    }
+  },
+  "buttons": {
+    "signUp": "Kayıt Ol"
+  }
+}
